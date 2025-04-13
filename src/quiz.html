@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Horizons - Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="home.html" class="logo">
+                    <img src="images/logo.jpg" alt="Healing Horizons Logo" width="50" height="50">
+                    <span>Healing Horizons</span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signout.html">Sign-out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="quiz">
+                <h1>Mental Health Quiz</h1>
+                <p>Answer the following questions to determine if you might need professional help.</p>
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <label>1. Do you often feel sad or depressed?</label>
+                        <input type="radio" name="q1" value="yes" required> Yes
+                        <input type="radio" name="q1" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>2. Do you have trouble sleeping or sleep too much?</label>
+                        <input type="radio" name="q2" value="yes" required> Yes
+                        <input type="radio" name="q2" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>3. Do you feel anxious or worried frequently?</label>
+                        <input type="radio" name="q3" value="yes" required> Yes
+                        <input type="radio" name="q3" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>4. Do you have difficulty concentrating or making decisions?</label>
+                        <input type="radio" name="q4" value="yes" required> Yes
+                        <input type="radio" name="q4" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>5. Do you experience mood swings or irritability?</label>
+                        <input type="radio" name="q5" value="yes" required> Yes
+                        <input type="radio" name="q5" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>6. Do you feel overwhelmed by daily tasks?</label>
+                        <input type="radio" name="q6" value="yes" required> Yes
+                        <input type="radio" name="q6" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>7. Do you have thoughts of self-harm or suicide?</label>
+                        <input type="radio" name="q7" value="yes" required> Yes
+                        <input type="radio" name="q7" value="no"> No
+                    </div>
+                    <div class="quiz-question">
+                        <label>8. Do you avoid social interactions or feel isolated?</label>
+                        <input type="radio" name="q8" value="yes" required> Yes
+                        <input type="radio" name="q8" value="no"> No
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="quiz-result"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Healing Horizons. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

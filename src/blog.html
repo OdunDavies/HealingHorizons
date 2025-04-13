@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Horizons - Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="home.html" class="logo">
+                    <img src="images/logo.jpg" alt="Healing Horizons Logo" width="50" height="50">
+                    <span>Healing Horizons</span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signout.html">Sign-out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="blog">
+                <h1>Blog</h1>
+                <p>Share your stories about how you struggled with mental health and how you overcame it. Your story can inspire others!</p>
+                <form id="blog-form">
+                    <label for="title">Post Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    
+                    <label for="content">Your Story:</label>
+                    <textarea id="content" name="content" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="testimonials">
+                    <h2>Testimonials</h2>
+                    
+                    <div class="testimonial">
+                        <h3>Overcoming Anxiety</h3>
+                        <p>I struggled with anxiety for years, but through therapy and support from my loved ones, I learned coping strategies that helped me manage my anxiety and live a fulfilling life. It wasn't easy, but with persistence and the right help, I was able to overcome my fears and regain control over my life. Now, I feel more confident and capable of handling stressful situations.</p>
+                        <p><strong>Posted by:</strong> anonymous@example.com</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <h3>Living with Depression</h3>
+                        <p>Depression had a strong grip on my life for many years. I felt hopeless and alone. However, seeking professional help and talking to a therapist made a significant difference. I also found solace in creative outlets like painting and writing. These activities allowed me to express my emotions and find a sense of peace. Today, I continue to manage my depression with a combination of therapy, medication, and self-care practices.</p>
+                        <p><strong>Posted by:</strong> anonymous@example.com</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <h3>Managing Bipolar Disorder</h3>
+                        <p>Being diagnosed with bipolar disorder was a turning point in my life. The mood swings were challenging to deal with, but with the right treatment plan, including medication and therapy, I learned to manage my condition. Support from my family and friends was crucial in my journey. They provided the understanding and encouragement I needed to stay on track. Now, I focus on maintaining a balanced lifestyle and staying connected with my support network.</p>
+                        <p><strong>Posted by:</strong> anonymous@example.com</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Healing Horizons. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

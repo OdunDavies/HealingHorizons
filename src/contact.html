@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Horizons - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="home.html" class="logo">
+                    <img src="images/logo.jpg" alt="Healing Horizons Logo" width="50" height="50">
+                    <span>Healing Horizons</span></a>
+                    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+                    <ul class="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signout.html">Sign-out</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="contact">
+                <h1>Contact Mental Health Professionals</h1>
+                <p>If you need professional help, please reach out to one of the specialists below:</p>
+                <div class="contact-card">
+                    <h2>Dr. Jane Smith</h2>
+                    <p><strong>Specialization:</strong> Clinical Psychologist</p>
+                    <p><strong>Email:</strong> jane.smith@example.com</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <h2>Dr. John Doe</h2>
+                    <p><strong>Specialization:</strong> Psychiatrist</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Phone:</strong> (987) 654-3210</p>
+                </div>
+                <div class="contact-card">
+                    <h2>Dr. Emily Johnson</h2>
+                    <p><strong>Specialization:</strong> Licensed Therapist</p>
+                    <p><strong>Email:</strong> emily.johnson@example.com</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Healing Horizons. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
